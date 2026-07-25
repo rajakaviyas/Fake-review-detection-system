@@ -1,52 +1,78 @@
-# 🛡️ FakeGuard – Fake Review Detection System
+# 🛡️ FakeGuard – An Intelligent Machine Learning Framework for Detecting Fraudulent E-Commerce Reviews
 
-A Machine Learning-based web application that detects fraudulent e-commerce product reviews and classifies them as **Genuine** or **Fake**. The system helps improve the reliability of online reviews by analyzing review text using machine learning techniques through an intuitive web interface.
+FakeGuard is a Machine Learning-powered web application that detects fraudulent e-commerce product reviews while ensuring that **only verified customers can submit reviews** using a **Purchase-Linked Review Token (PLRT)**.
+
+Unlike traditional fake review detection systems, FakeGuard combines **purchase verification** and **machine learning-based review analysis** to improve the authenticity and reliability of online product reviews. This dual-layer approach helps prevent spam, fake reviews, and unauthorized review submissions, thereby increasing customer trust in e-commerce platforms.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-* 🔍 Detects fake product reviews using Machine Learning
-* 📝 Analyzes user-entered review text
-* ⚡ Provides fast and accurate predictions
-* 🌐 Interactive web interface built with Flask
-* 📱 Simple, clean, and responsive design
-* 💡 Easy to use and deploy
+* 🔐 **Purchase-Linked Review Token (PLRT)** ensures that only verified customers can submit reviews.
+* 🤖 Detects fake and genuine reviews using Machine Learning.
+* 📝 Performs intelligent review text analysis.
+* ⚡ Provides fast and accurate review classification.
+* 🌐 Interactive web application developed using Flask.
+* 📱 Simple, clean, and responsive user interface.
+* 🛒 Improves trustworthiness of product reviews on e-commerce platforms.
+* 📊 Efficient review processing with real-time prediction.
+
+---
+
+## 🏗️ System Workflow
+
+1. Customer purchases a product.
+2. The system generates a unique **Purchase-Linked Review Token (PLRT)**.
+3. The customer enters the PLRT before submitting a review.
+4. The system verifies the authenticity of the token.
+5. The submitted review is analyzed using the Machine Learning model.
+6. The review is classified as **Genuine** or **Fake**.
+7. The prediction result is displayed through the web interface.
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend**
+### Frontend
 
 * HTML5
 * CSS3
 * JavaScript
 
-**Backend**
+### Backend
 
 * Python
 * Flask
 
-**Machine Learning**
+### Machine Learning
 
 * Scikit-learn
 * Pandas
 * NumPy
+
+### Database
+
+* MySQL
+
+### Development Tools
+
+* Visual Studio Code
+* Git
+* GitHub
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-Fake-Review-Detection-System/
+FakeGuard/
 │
-├── static/             # CSS, JavaScript, Images
-├── templates/          # HTML Templates
-├── dataset/            # Training Dataset
-├── model/              # Trained Machine Learning Model
-├── app.py              # Flask Application
-├── requirements.txt    # Project Dependencies
+├── static/                 # CSS, JavaScript, Images
+├── templates/              # HTML Templates
+├── dataset/                # Training Dataset
+├── model/                  # Trained Machine Learning Model
+├── app.py                  # Flask Application
+├── requirements.txt        # Project Dependencies
 └── README.md
 ```
 
@@ -54,31 +80,31 @@ Fake-Review-Detection-System/
 
 ## ⚙️ Installation
 
-1. Clone the repository.
+### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Fake-Review-Detection-System.git
+git clone https://github.com/your-username/FakeGuard.git
 ```
 
-2. Navigate to the project folder.
+### Navigate to the project folder
 
 ```bash
-cd Fake-Review-Detection-System
+cd FakeGuard
 ```
 
-3. Install the required dependencies.
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the Flask application.
+### Run the application
 
 ```bash
 python app.py
 ```
 
-5. Open your browser and visit:
+### Open in your browser
 
 ```text
 http://127.0.0.1:5000
@@ -88,30 +114,43 @@ http://127.0.0.1:5000
 
 ## 🎯 Project Objective
 
-The objective of this project is to identify fake product reviews using Machine Learning algorithms, helping customers make informed purchasing decisions and improving trust in e-commerce platforms.
+The primary objective of FakeGuard is to improve the reliability of online product reviews by combining **Purchase-Linked Review Token (PLRT)** verification with **Machine Learning-based fake review detection**.
+
+This approach ensures that:
+
+* Only verified customers can submit reviews.
+* Fraudulent and spam reviews are detected automatically.
+* Customer trust in e-commerce platforms is increased.
+* Businesses receive more authentic customer feedback.
+
+---
+
+## 💡 Applications
+
+* E-commerce Platforms
+* Online Shopping Websites
+* Product Review Systems
+* Marketplace Applications
+* Customer Feedback Analysis
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Deep Learning-based review classification
-* Sentiment Analysis integration
-* REST API support
-* Cloud deployment
-* Real-time review monitoring
-* Higher model accuracy with larger datasets
-
----
-
-## 🤝 Contributing
-
-Contributions, suggestions, and improvements are always welcome. Feel free to fork the repository and submit a pull request.
+* Deep Learning models for higher prediction accuracy.
+* Real-time review monitoring.
+* REST API integration.
+* Cloud deployment using AWS or Azure.
+* Multi-language review analysis.
+* Sentiment analysis integration.
+* Mobile application support.
+* Enhanced fraud detection using NLP and Transformer models.
 
 ---
 
 ## 📄 License
 
-This project is intended for educational and learning purposes.
+This project was developed for educational and academic purposes.
 
 ---
 
@@ -119,4 +158,10 @@ This project is intended for educational and learning purposes.
 
 **Rajakaviya S**
 
-Software Developer | Python | Java | Machine Learning | Web Development
+**Bachelor of Engineering – Computer Science and Engineering**
+
+**Skills:** Python • Java • SQL • Machine Learning • Flask • HTML • CSS • JavaScript
+
+---
+
+⭐ If you found this project useful, consider giving it a **Star** on GitHub!
